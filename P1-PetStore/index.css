@@ -376,6 +376,41 @@ li {
 
 /* showcase section ends  */
 
+/* Location and Hours section start */
+
+.storeLocations{
+    padding: 10px;
+}
+.storeLocationsCard{
+    background-color: var(--brand-02);
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-01);
+    border-radius: 10px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+.storeLocationsHeader{
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom:20px;
+}
+.storeLocationsContent{
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    max-width: 40%;
+    padding-bottom: 20px;
+}
+.storeLocationsButtons{
+    display: flex;
+    gap: 10px;
+}
+/* Location and Hours section ends  */
+
 
 /* media queries */
 
@@ -416,6 +451,10 @@ li {
         width: 45%;
     }
 
+    .storeLocationsContent{
+        max-width: 80%;
+    }
+
 }
 
 @media screen and (min-width:400px) and (max-width :631px) {
@@ -427,7 +466,9 @@ li {
         text-align: center;
         margin-bottom: 10px;
     }
-    
+    .storeLocationsContent{
+        max-width: 80%;
+    }
 }
 
 @media screen and (max-width:400px) {
@@ -471,6 +512,9 @@ li {
     .showByCategory{
         margin: 10px;
         width: 100%;
+    }
+    .storeLocationsContent{
+        max-width: 80%;
     }
 
 }
