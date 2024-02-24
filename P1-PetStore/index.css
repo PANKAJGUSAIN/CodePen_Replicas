@@ -29,6 +29,7 @@ header {
     position: sticky;
     top: 0;
     cursor: pointer;
+    z-index: 100;
 }
 
 header>.offer {
@@ -281,6 +282,99 @@ li {
 }
 
 /* hero action ends */
+
+/* showcase section start  */
+
+.showByCategorySection{
+    min-height: 600px;
+    background-color: var(--light-01);
+}
+
+.showByCategoryHeader{
+    padding-top: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-01);
+}
+
+.showByCategory{
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    height: 450px;
+    width: 20%;
+    min-width: 180px;
+    border-radius: 10px;
+}
+
+.categories{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.CategoryImage{
+    text-align: center;
+}
+
+.showByCategory:hover{
+    box-shadow: 0px 0px 5px 1px var(--card-hover);
+    transition: 0.1s transform ease-in-out; 
+    transform: scale(1.01);
+}
+
+.showByCategory:hover > .CategoryImage{ 
+    transition: 0.5s transform ease-in-out;
+    transform: scale(1.1);
+}
+
+.categoryContent{
+    display: flex;
+    flex-direction: column;
+}
+
+.categoryContent {
+    padding-left: 20px;
+}
+
+.categoryContent p{
+    color: var(--light-02);
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+
+.categoryContent ul{
+    min-height: 180px;
+}
+
+.categoryContent ul > li{
+    font-size: 10px;
+    padding-bottom: 15px;
+    font-weight: 400;
+}
+.categoryContentBlackColor{
+    color: var(--text-01) !important;
+}
+.bordercolorwhite{
+    width: 100%;
+    border-color: var(--light-02);
+    color: var(--light-02);
+    fill: var(--light-02);
+}
+
+.categoryButton{
+    margin-left: -20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* showcase section ends  */
 
 
 /* media queries */
