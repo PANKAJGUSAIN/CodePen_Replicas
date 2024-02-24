@@ -21,7 +21,6 @@ body {
     font-weight: 500;
     /* background-color: black; */
     width: 100%;
-    height: 29999vh;
 }
 
 header {
@@ -285,9 +284,17 @@ li {
 
 /* showcase section start  */
 
+.categories{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
 .showByCategorySection{
     min-height: 600px;
     background-color: var(--light-01);
+    margin-bottom: 10px;
 }
 
 .showByCategoryHeader{
@@ -302,17 +309,10 @@ li {
 .showByCategory{
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
     padding: 10px;
-    height: 450px;
+    min-height: 450px;
     width: 20%;
     min-width: 180px;
     border-radius: 10px;
-}
-
-.categories{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
 }
 
 .CategoryImage{
@@ -395,7 +395,30 @@ li {
     }
 }
 
-@media screen and ( max-width :631px) {
+@media  screen and (min-width :631px) and (max-width:800px) {
+
+    /* for showByCategory */
+    .showcaseButton{
+        flex-direction: column;
+    }
+
+    .categories{
+        display: flex;
+        justify-content: center;
+    }
+
+    .CategoryImage img{
+        height: 200px !important;
+        width: 200px !important;
+    }
+
+    .showByCategory{
+        width: 45%;
+    }
+
+}
+
+@media screen and (min-width:400px) and (max-width :631px) {
     .footerContent{
         align-items: center;
         flex-direction: column;
@@ -405,9 +428,50 @@ li {
         margin-bottom: 10px;
     }
     
+}
+
+@media screen and (max-width:400px) {
+
     .showcaseButton{
         flex-direction: column;
     }
-    
+
+    .categories{
+        display: flex;
+        justify-content: center;
+    }
+
+    .CategoryImage img{
+        height: 200px !important;
+        width: 200px !important;
+    }
+
+    .showByCategory{
+        width: 45%;
+    }
+
+    .footerContent{
+        align-items: center;
+        flex-direction: column;
+    }
+    .footerContentCenter{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .categories{
+        display: flex;
+    }
+
+    .CategoryImage img{
+        height: 200px !important;
+        width: 200px !important;
+    }
+
+    .showByCategory{
+        margin: 10px;
+        width: 100%;
+    }
+
 }
 
